@@ -28,7 +28,7 @@ def load_and_clean_data(path: str):
     df = df[df["Age"] <= 80]
     return df
 
-BASE_DIR  = os.path.dirname(__file__) 
+BASE_DIR  = os.path.dirname(os.path.dirname(__file__))
 DATA_PATH = os.path.join(BASE_DIR, "..", "data", "dataset.csv")
 df = load_and_clean_data(DATA_PATH)
 
